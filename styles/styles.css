@@ -1,52 +1,65 @@
 :root{
-    --nav-background-color: darkblue;
+    --nav-background-color: steelblue;
     --nav-padding: 10px;
-    --a-in-nav-color: white;
-    --a-in-nav-display: block;
-    --a-in-nav-padding: 20px;
-    --black-borders: 1px solid black;
+    --a-links-color: white;
+    --black-borders: 1px solid #000;
     --text-centered: center;
     
 }
-
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 
 nav {
     background-color: var(--nav-background-color);
     padding: var(--nav-padding);
 }
 nav a {
-    color: var(--a-in-nav-color);
-    display: var(--a-in-nav-display);
-    padding: var(--a-in-nav-padding);
+    color: var(--a-links-color);
+    display: block;
+    padding: var(--nav-padding);
 }
 
 h1 { 
-    color: darkblue;
+    color: steelblue;
+    padding: .5rem;
 }
 
 main img {
-    width: 40%;
+    width: 150px;
     height: auto;
-    border: var(--black-borders);
+    border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
+    
 }
 
 p { 
     padding: 0;
 }
+
 main {
-    max-width: 480px;
+    max-width: 700px;
+    max-height: 700px;
 }
 
 aside {
-    width: 20rem;
-    margin:1rem;
-    border: var(--black-borders);
-    padding: 1rem;
+    width: 20em;
     background-color: #eee;
     color: #333;
     text-align: var(--text-centered);
+    position: relative;
+}
+
+aside h2{
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    color: #eee;
 }
 
 aside img {
@@ -58,4 +71,14 @@ footer {
     margin-top: 15px;
     border-top: var(--black-borders);
     text-align: var(--text-centered);
+}
+
+/* Class selectors */
+.box{
+    margin: 1.5rem;
+    border: 1px solid rgb(0 0 0 / .1);
+    padding: 1rem;
+    background-color: #eee;
+    color:#000;
+
 }
