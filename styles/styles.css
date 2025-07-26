@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+header, footer{
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: var(--nav-background-color);
     padding: var(--nav-padding);
@@ -40,6 +45,13 @@ main img {
 
 p { 
     padding: 0;
+}
+
+nav{
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 main {

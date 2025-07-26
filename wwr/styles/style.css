@@ -10,6 +10,32 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    align-items: start;
+}
+
+.logo-area {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 1rem
+}
+
+nav.links { 
+    display: flex;
+    padding-top: 5rem;
+    justify-content: center;
+    gap: 0px
+}
+
+nav.links a{
+    margin: 0;
+    padding: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border: solid var(--secondary-color) 1px;
+    color: #202531;
 }
 
 * {
@@ -28,18 +54,43 @@ header, main, footer {
     margin: 0 auto;
 }
 
-header img {
-    display: block;
+.history{
+    display: grid;
+    text-align: center;
+    border: solid var(--primary-color);
 }
 
 h1, h2 {
     font-family: var(--hading-font);
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
 
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
+    
+}
+
+.landscapes{
+    display:grid;
+    text-align: center;
+    border: solid var(--primary-color);
+}
+#images{
+    display: flex;
+    justify-content: space-around;
+
+}
+#images img{
+    width: 150px;
+    
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8rem;
+    border: solid var(--primary-color);
 }
 
 .socialmedia a {
@@ -67,8 +118,6 @@ h1 {
     opacity: 0.9;
     width: 100%;
     text-align: center;
-    
-
 }
 
 .hero article {
@@ -77,7 +126,6 @@ h1 {
     top: 450px;
     
 }
-
 
 .hero article img {
     float: right;
