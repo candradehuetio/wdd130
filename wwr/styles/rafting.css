@@ -71,7 +71,7 @@ nav, p, section, article {
     
 }
 
-.landscapes{
+.adventure{
     display:grid;
     text-align: center;
     border: solid var(--primary-color);
