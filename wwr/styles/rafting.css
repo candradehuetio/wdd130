@@ -75,16 +75,35 @@ nav, p, section, article {
     display:grid;
     text-align: center;
     border: solid var(--primary-color);
-}
-#images{
-    display: flex;
-    justify-content: space-around;
+    grid-template-columns: 1fr;
 
 }
-#images img{
-    width: 150px;
-    
+
+#images {
+    display: flex;
+    flex-wrap:  nowrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
 }
+
+figure {
+    
+    max-width: 200px;
+    margin: 0;
+    text-align: center;
+
+}
+
+figure img{
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    border-radius: 9px;
+
+}
+
 footer{
     display: flex;
     justify-content: flex-end;
