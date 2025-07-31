@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2rem;
+}
+
+header {
+    margin: 0;
+    width: 650px;
+}
+h1 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: navy;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    width: 650px;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: #eee;
+    border: 1px solid ;
+
+}
+
+div {
+    display: grid;
+    grid-gap: .5rem;
+    
+    border: 1px solid rgb(0, 0, 0 / 0.2);
+    padding: 1rem;
+}
