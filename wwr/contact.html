@@ -78,32 +78,40 @@
 
     <fieldset>
         <legend>Contact Information</legend>
+
         <div class="form-item column2">
         <label for="fullname">Full Name:</label>
         <input type="text" id="fullname" name="fullname">
+        
         </div>
         <div class="form-item column2">
         <label for="usermail">Email:</label>
         <input type="email" id="usermail" name="usermail">
         </div>
+
     </fieldset>
 
     <fieldset>
         <legend>Send a message</legend>
 
         <div class="form-item column1">
-        <label for="browser">Select the purpose of the message</label>
-        <select name="browser" id="browser">
-            <option value="chrome">General Inquiry</option>
-            <option value="firefox">Reservation Question</option>
-            <option value="safari">Website Suggestion</option>
-        </select>
+        <p>Select the purpose of the message</p>
+        <div class="radio-grid">
+        <label for="general-inquiry">General Inquiry</label>
+        <input type="radio" id="general-inquiry" name="radio" value="general-inquiry">
+
+        <label for="reservation">Reservation Question</label>
+        <input type="radio" id="reservation" name="radio" value="reservation">
+
+        <label for="website-suggestion">Website Suggestion</label>
+        <input type="radio" id="website-suggestion" name="radio" value="website-suggestion">
+        </div>
         </div>
 
-        <label for="feedback"></label>
-        <textarea name="feedback" id="feedback" rows="4" placeholder="Write here..."></textarea>
+        <label for="message"></label>
+        <textarea name="message" id="message" rows="4" placeholder="Write here..."></textarea>
 
-        <div class="form-item column1">
+        <div class="checkbox">
         <label for="pet">Please subscribe me to the monthly newsletter</label>
         <input type="checkbox" id="pet" name="pet">
         </div>
