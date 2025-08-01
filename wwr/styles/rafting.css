@@ -154,6 +154,7 @@ footer{
 
 
 div.table{
+    font-family:  "Oswald", sans-serif;
     display: grid;
     justify-content: center;
     border-radius: 5px;
@@ -186,6 +187,7 @@ tfoot {
 /* customer service section */
 
 .workers{
+    font-family:  "Oswald", sans-serif;
     display: grid;
     text-align: center;
 }
@@ -220,6 +222,7 @@ figure {
 
 
 form {
+    font-family: "Oswald", sans-serif;
     display: grid;
     width: 650px;
     margin: 0 auto;
