@@ -34,8 +34,9 @@ nav.links a{
     padding: 25px;
     text-decoration: none;
     font-weight: bold;
-    border: solid var(--secondary-color) 1px;
-    color: #202531;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
 }
 
 * {
@@ -151,5 +152,149 @@ h1 {
     width: 250px;
 }
 
+/* Contact Section */
 
+div.table{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border: 4px solid var(--secondary-color);
+    margin: 1rem auto;
+    width: fit-content;
+}
+caption {
+  padding: 10px;
+  font-weight: bold;
+  font-size: large;
+}
 
+table {
+    border: 2px solid rgb(140, 140, 140);
+    letter-spacing: 1px;
+}
+
+thead {
+  background-color: var(--secondary-color);
+  color: #ffff;
+}
+
+th, td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+
+}
+
+tfoot {
+    background-color: var(--accent2-color);
+}
+
+/* customer service section */
+
+.workers{
+    display: grid;
+    text-align: center;
+}
+
+.workers h3 {
+    margin: 2rem;
+}
+
+.workers_img {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+figure {
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    padding-bottom: 0;
+}
+
+.workers img {
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.workers figcaption {
+    margin: 0;
+
+}
+
+/* Form section */
+
+form {
+    display: grid;
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: var(--accent1-color);
+    border: 1px solid rgb(0, 0, 0/ 0.1);
+
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0 / 0.2);
+    padding: 1rem;
+}
+
+legend {
+    font-weight: 1000;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+input, label, button, select, textarea {
+    font-family: "Bitcount", system-ui;
+    font-weight: 500;
+    font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
