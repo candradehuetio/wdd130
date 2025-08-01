@@ -129,7 +129,7 @@ footer{
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 70px;
     color: whitesmoke;
@@ -154,18 +154,14 @@ h1 {
 
 /* Contact Section */
 
+
 div.table{
-    display: flex;
+    display: grid;
     justify-content: center;
     border-radius: 5px;
     border: 4px solid var(--secondary-color);
     margin: 1rem auto;
     width: fit-content;
-}
-caption {
-  padding: 10px;
-  font-weight: bold;
-  font-size: large;
 }
 
 table {
@@ -221,6 +217,8 @@ figure {
 }
 
 /* Form section */
+
+
 
 form {
     display: grid;
