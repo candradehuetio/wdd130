@@ -254,7 +254,7 @@ legend {
     font-size: 1.3rem;
 }
 
-input, label, button {
+label, button {
     color: white;
     font-weight: 500;
     font-variation-settings:
