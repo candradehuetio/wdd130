@@ -3,7 +3,12 @@
     --secondary-color: #202531;
     --accent1-color: #506295;
     --accent2-color: #B0B0B0;
+    --body-font: "Open Sans", sans-serif;
+    --title-font: "Raleway", sans-serif;
 }
+
+/*---------------------General style / About us page------------ */
+
 
 header {
     background-color: var(--primary-color);
@@ -28,6 +33,7 @@ nav.links {
 }
 
 nav.links a{
+    font-family: var(--title-font);
     margin: 0;
     padding: 25px;
     text-decoration: none;
@@ -59,8 +65,44 @@ header, main, footer {
     border: solid var(--primary-color);
 }
 
+.hero {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    letter-spacing: 0.2em;
+    top: 70px;
+    color: whitesmoke;
+    background-color: var(--accent1-color);
+    padding: 16px;
+    opacity: 0.9;
+    width: 100%;
+    text-align: center;
+}
+
+.hero article {
+    position: absolute;
+    background-color: var(--accent1-color);
+    top: 450px;
+    
+}
+
+.hero article img {
+    float: right;
+    width: 250px;
+}
+
+
 h1, h2 {
-    font-family: var(--hading-font);
+    font-family: var(--title-font);
     color: var(--primary-color);
 }
 
@@ -116,45 +158,12 @@ footer{
 
 }
 
-.hero {
-    position: relative;
-    margin-bottom: 100px;
-}
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+/* -------------------- Contact Page ----------------------- */
 
-.hero h1 {
-    position: absolute;
-    top: 70px;
-    color: whitesmoke;
-    background-color: var(--accent1-color);
-    padding: 16px;
-    opacity: 0.9;
-    width: 100%;
-    text-align: center;
-}
-
-.hero article {
-    position: absolute;
-    background-color: var(--accent1-color);
-    top: 450px;
-    
-}
-
-.hero article img {
-    float: right;
-    width: 250px;
-}
-
-/* Contact Section */
-
+/* form */
 
 div.table{
-    font-family:  "Oswald", sans-serif;
     display: grid;
     justify-content: center;
     border-radius: 5px;
@@ -162,6 +171,10 @@ div.table{
     margin: 1rem auto;
     width: fit-content;
     text-align: center;
+}
+
+.table h1 {
+    text-transform: uppercase;
 }
 
 table {
@@ -218,8 +231,6 @@ figure {
 }
 
 /* Form section */
-
-
 
 form {
     font-family: "Oswald", sans-serif;
@@ -281,6 +292,8 @@ input[type="checkbox"] {
 }
 
 button {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     margin: 1rem;
     background-color: navy;
     color: #fff;
@@ -305,5 +318,84 @@ button:hover{
 
 .column2 {
     grid-template-columns: 1fr 2fr;
+}
+
+/* -------------- Home Page ---------------*/
+
+.hero a {
+    display: flex;
+    justify-self: center;
+    position: absolute;
+    top: 20%;
+    font-family: var(--title-font);
+    margin: 0;
+    opacity: 0.9;
+    padding: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 10px;
+    font-size: large;
+    color: whitesmoke;
+    border-radius: 100px;
+    background-color: var(--primary-color);
+}
+
+.hero a:hover {
+    transform: scale(1.05);
+    background-color: #003366;
+    font-size: larger;
+ }
+
+
+.image-section {
+    margin-top: 6rem;
+ }
+
+ .purpose {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 4em;
+ }
+
+.purpose img {
+    width: 100%;
+    height: auto;
+    border-radius: 5rem;
+}
+
+.purpose h1 {
+    letter-spacing: 10px;
+}
+
+.offering {
+    margin-top: 6rem;
+}
+
+.offering h1 {
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.offering-images {
+    margin-top: 30px;
+   display: flex;
+   justify-content: center;
+   gap: 50px;
+   padding: 20px;
+   flex-wrap: wrap;
+}
+
+.offer-image {
+  max-width: 400px;
+  text-align: center;
+  flex: 1 1 300px;
+}
+
+.offer-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
