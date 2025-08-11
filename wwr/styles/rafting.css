@@ -29,7 +29,7 @@ nav.links {
     display: flex;
     padding-top: 5rem;
     justify-content: center;
-    gap: 0px
+    gap: 1rem;
 }
 
 nav.links a{
@@ -38,9 +38,15 @@ nav.links a{
     padding: 25px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
-    border: 1px solid white;
-    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color)
+}
+
+nav.links a:hover {
+    background-color: var(--secondary-color);
+    color: whitesmoke;
 }
 
 * {
@@ -403,12 +409,13 @@ button:hover{
 
 .cta-section{
     text-align: center;
-    border-radius: 5em;
+    border-radius: 2em;
     font-weight: bold;
     font-family: var(--title-font);
-    font-size: 1.4em;
+    font-size: 1em;
     background-color: var(--accent2-color);
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .cta-button {
@@ -416,7 +423,7 @@ button:hover{
     margin: 0 auto;
     color: var(--secondary-color);
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.3rem;
     font-weight: bold;
     background-color: var(--primary-color);
     border-radius: 10rem; 
