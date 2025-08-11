@@ -1,5 +1,5 @@
 :root{
-    --primary-color: #4362B0;
+    --primary-color: #C8D1EA;
     --secondary-color: #202531;
     --accent1-color: #506295;
     --accent2-color: #B0B0B0;
@@ -86,8 +86,8 @@ header, main, footer {
     position: absolute;
     letter-spacing: 0.2em;
     top: 70px;
-    color: whitesmoke;
-    background-color: var(--accent1-color);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
     padding: 16px;
     opacity: 0.9;
     width: 100%;
@@ -96,7 +96,7 @@ header, main, footer {
 
 .hero article {
     position: absolute;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     top: 450px;
     
 }
@@ -109,7 +109,7 @@ header, main, footer {
 
 h1, h2 {
     font-family: var(--title-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 nav, p, section, article {
@@ -246,13 +246,13 @@ form {
     margin-bottom: 1rem;
     border-radius: 0.5rem;
     padding: 1rem;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
     border: 1px solid rgb(0, 0, 0/ 0.1);
 }
 
 form p {
     text-align: center;
-    color: #fff;
+    color: var(--secondary-color);
     font-weight: 600;
 }
 
@@ -267,12 +267,12 @@ fieldset {
 legend {
     font-weight: 1000;
     text-align: center;
-    color: white;
+    color: var(--secondary-color);
     font-size: 1.3rem;
 }
 
 label, button {
-    color: white;
+    color: var(--secondary-color);
     font-weight: 500;
     font-variation-settings:
     "slnt" 0,
@@ -341,14 +341,15 @@ button:hover{
     font-weight: bold;
     letter-spacing: 10px;
     font-size: large;
-    color: whitesmoke;
+    color: var(--secondary-color);
     border-radius: 100px;
     background-color: var(--primary-color);
 }
 
 .hero a:hover {
     transform: scale(1.05);
-    background-color: #003366;
+    background-color: var(--secondary-color);
+    color: whitesmoke;
     font-size: larger;
  }
 
@@ -405,7 +406,7 @@ button:hover{
   margin-bottom: 10px;
 }
 
-/* Trips section */
+/*-------------------- Trips page --------------------*/
 
 .cta-section{
     text-align: center;
